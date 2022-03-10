@@ -1,24 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mayday_list1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRU-Yp-gA5">
+                                <rect key="frame" x="45" y="76" width="184" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">五月天第一張創作專輯
+1999/07/07</string>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QF-mW-12i">
+                                <rect key="frame" x="30" y="168" width="314" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Mayday_1st_Album" title=""/>
+                                <connections>
+                                    <segue destination="JhP-jV-DRP" kind="show" id="eDI-GM-Xq4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dPa-cG-e8h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44" y="83.208395802098963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="D0b-VW-6XB">
+            <objects>
+                <viewController id="JhP-jV-DRP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Vo-cs-wMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rm-Gq-o9P">
+                                <rect key="frame" x="41" y="57" width="293" height="464"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3162065744" green="0.34051668639999999" blue="0.39960533380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">專輯介紹
+
+這是五月天的第一張專輯，也是地下樂團開始冒出頭，對台灣地下搖滾圈具有時代性的一張專輯，以往被大眾忽略的地下搖滾，經由五月天的走紅，開始被大眾漸漸接受也造就了一股樂團風潮，當然，五月天偏於流行的曲風也是會讓大家接受的主要原因。
+
+〈瘋狂世界〉是大家認識五月天的第一首歌，這首歌有著校園派的年輕活力，打響了他們的第一步。
+
+最讓他們成功的是一曲〈志明與春嬌〉，透過這兩個眾所皆知的菜市場名的愛情故事，一時之間擄獲了年輕人的心並開始使他們的歌在KTV中傳唱。
+
+抒情曲〈擁抱〉更把氣勢帶到最高點，成功的把五月天從一個默默無聞的地下樂團，造就成了台灣樂壇的傳奇。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-AB-0eB">
+                                <rect key="frame" x="41" y="529" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.406242785" green="0.78143941220000002" blue="0.89283988400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.fill" catalog="system" title=" "/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Vd4-fy-7gb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibG-Iv-fcT">
+                                <rect key="frame" x="220" y="529" width="114" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40624278495232846" green="0.78143941219495783" blue="0.89283988402061853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="專輯曲目"/>
+                                <connections>
+                                    <segue destination="JeU-Ha-WYI" kind="show" id="CpI-Fb-umS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Atm-ep-VWH"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jSi-f0-gVT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Zu-rB-LnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="82.3088455772114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g1X-a4-5uw">
+            <objects>
+                <viewController id="JeU-Ha-WYI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MbQ-Z9-Ttg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="va0-gu-u6t">
+                                <rect key="frame" x="41" y="55" width="293" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.3162065744" green="0.34051668639999999" blue="0.39960533380000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">1.	瘋狂世界    
+World crazy	 	
+
+2.	擁抱   
+Embrace	 	
+
+3.	透露   
+Let it out	 	
+
+4.	生活   
+My life	 	
+
+5.	愛情的模樣   
+This is love	 	
+
+6.	嘿我要走了   
+Hey! I'm leaving	 	
+
+7.	軋車   
+Motor rock
+
+8.	志明與春嬌   
+Peter &amp; Mary	
+
+9.	HOSEE		
+
+10.	黑白講   
+Bullshit	
+
+11.	I Love You 無望   
+I love you-hopeless	
+
+12.	風若吹   
+When the wind blows	
+
+</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJQ-Ac-coc">
+                                <rect key="frame" x="41" y="571" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.406242785" green="0.78143941220000002" blue="0.89283988400000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.backward.fill" catalog="system" title=" "/>
+                                <connections>
+                                    <segue destination="JhP-jV-DRP" kind="show" id="t1l-ED-1xA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jew-8N-JZ8"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tCy-GT-d4t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ri-BF-BtW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477.5999999999999" y="82.3088455772114"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t1l-ED-1xA"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Mayday_1st_Album" width="350" height="296"/>
+        <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
